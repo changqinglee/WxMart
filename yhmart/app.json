@@ -15,7 +15,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "生活驿站",
+    "navigationBarTitleText": "微信小程序头部显示的标题，改为自己的标题",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

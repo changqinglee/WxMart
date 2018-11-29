@@ -35,10 +35,10 @@ App({
   },
   globalData: {
     userInfo: null,
-    url:"https://xcx.shyuanhuan.com",
+    url:"https://xcx.shxxxxxxxx.com",  //小程序的request的服务器地址 必须是https协议请求
     kind:null,
     openid:"",
-    wxpay: "9Cg1VFKG00bc341ZAKga3SESYorm5gcs",
+    wxpay: "9Cg1VFKG00bc341ZAKga3Sxxxxxxxxxx",  //自己的微信商户微信支付密钥
     carts:[],
   }
 })
