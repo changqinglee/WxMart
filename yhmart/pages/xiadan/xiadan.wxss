@@ -1,0 +1,174 @@
+/* pages/xiadan/xiadan.wxss */
+image{
+    vertical-align: bottom;
+}
+.address{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #666;
+    height: 140rpx;
+    font-size: 30rpx;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.2), 0 0.5px 0 0 rgba(0,0,0,.3);
+    padding: 20rpx 0;
+}
+.addressTel{
+    float: right;
+}
+.addressIcon{
+    width: 10%;
+    float: left;
+    height: 100%;
+    line-height: 95rpx;
+}
+.addressIcon image{
+    width: 90%;
+    margin: 0 auto;
+}
+.addressInfo{
+    width: 90%;
+    float: left;
+}
+.addressDet{
+    margin-top: 10rpx;
+}
+.empty{
+    height: 20rpx;
+    background: #EEE;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+.goodsimg{
+    width: 30%;
+    margin-left: 5%;
+}
+.goods{
+    padding-bottom: 80rpx;
+}
+.total{
+    background: #FFF;
+}
+.goodsimg image{
+    width:100%;
+    float: left;
+}
+.goodsInfo{
+    width: 60%;
+    float: left;
+}
+.goodsItem{
+    overflow: hidden;
+    background: #EEE;
+    margin-top: 30rpx;
+    padding: 20rpx 0;
+}
+.goodsName{
+    color:#666;
+}
+.goodsInfo view{
+    width: 90%;
+    margin: 0 auto;
+}
+.goodsPrice{
+    color: #ff0036;
+}
+.priceNum{
+    font-size: 50rpx;
+}
+.goodsNum{
+    text-align: right;
+}
+.changenum{
+    padding: 20rpx 0;
+    width: 90%;
+    margin:0 auto;
+}
+.jiannum,.plusnum{
+    background: #f5f5f5;
+    color: #666;
+    display: inline-block;
+    width: 55rpx;
+    text-align: center;
+}
+.num{
+    display: inline-block;
+    padding: 0 10rpx;
+}
+.changebtn{
+    display: inline;
+    float: right;
+}
+.smailtotal{
+    padding: 20rpx 0;
+    width: 90%;
+    margin:0 auto;
+    text-align: right;
+    border-top: 1px solid #EEE;
+}
+.smailtotalprice{
+    color: #ff0036;
+}
+.bottommenu{
+    position: fixed;
+    height: 80rpx;
+    bottom: 0;
+    width: 100%;
+    line-height: 80rpx;
+    box-shadow: 0 -1px 0 0 rgba(0,0,0,.1), 0 -0.5px 0.5px 0 rgba(0,0,0,.2);
+    overflow: hidden;
+}
+.total{
+    width: 70%;
+    float: left;
+    text-align: right;
+}
+.totalpricr{
+    color: #ff0036;
+}
+.buy{
+    float: left;
+    width: 30%;
+    text-align: center;
+    color: #FFF;
+    background: #ff0036;
+}
+.photo{
+    width: 20%;
+    margin: 1.25%;
+    border: 1px dashed #eee;
+    float: left;
+}
+.photo image{
+    width: 100%;
+    height: 160rpx;
+}
+.addphoto{
+    width: 20%;
+    margin: 1.25%;
+    border: 1px dashed #eee;
+    text-align: center;
+    height: 160rpx;
+    line-height: 140rpx;
+}
+.addphoto image{
+    width: 80%;
+    margin: 0 auto;
+}
+textarea{
+    width:80%;
+    margin: 20rpx;
+    display: block;
+    border: 1px solid dashed;
+}
+.trobleintro{
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+    border: 1px #ddd dashed;
+}
+.miaoshu{
+    padding-bottom: 100rpx;
+}
+.photoview{
+    overflow: hidden;
+}

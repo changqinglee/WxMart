@@ -1,0 +1,23 @@
+<!--pages/mine/mine.wxml-->
+<view class='banner'>
+  <image mode='widthFix' src='{{url}}/images/banner/WechatIMG24.jpg' />
+  <view class='userIcon' wx:if="{{hasUserInfo}}">
+    <image mode='widthFix' src='{{userInfo.avatarUrl}}' />
+  </view>
+  <view class='nickName'>
+    {{userInfo.nickName}}
+  </view>
+</view>
+<view class='getuserinfo' wx:if="{{!hasUserInfo}}">
+  <button open-type='getUserInfo' bindtap='getUserInfo'>
+    点击微信登录
+  </button>
+</view>
+<view class='menu' wx:if="{{hasUserInfo}}">
+  <view class='menuItem' bindtap='toDingdan'>
+    我的订单 <text>></text>
+  </view>
+  <view class='menuItem' bindtap='toAddress'>
+    我的地址 <text>></text>
+  </view>
+</view>

@@ -1,0 +1,38 @@
+<!--pages/goods/goods.wxml-->
+<view class='headAd'>
+  <swiper class='headSwiper' indicator-dots='true'>
+    <block wx:for='{{headAd}}' wx:key="key">
+      <swiper-item>
+        <image mode='widthFix' src='{{url}}{{item.url}}' />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='goods'>
+  <view class='goodsListTitle'>
+    <view class='titleLeft'>
+      {{kindName}}
+    </view>
+    <view class='titleRight'>
+
+    </view>
+  </view>
+  <view class='goodsList'>
+    <block wx:for="{{goods}}" wx:key="key">
+      <view class='goodsItem'>
+        <view class='goodsImg' data-id='{{item.id}}' bindtap='toGoodsDet'>
+          <image mode='widthFix' src='{{url}}{{item.img}}' />
+        </view>
+        <view class='goodsInfo' data-id='{{item.id}}' bindtap='toGoodsDet'>
+          <text class='goodsname'>{{item.name}}</text>
+          <text class='oldprice'>市场价： ￥{{item.oldprice}}</text>
+          <text class='price'>现价： ￥{{item.price}}</text>
+          <text class='tap'>点击进入</text>
+        </view>
+        <view class='cartIcon'>
+          <image bindtap='joincart' data-id='{{item.id}}' mode='widthFix' src='{{url}}/images/icon/gouwuche.png' />
+        </view>
+      </view>
+    </block>
+  </view>
+</view> 

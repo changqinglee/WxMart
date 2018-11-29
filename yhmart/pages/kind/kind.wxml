@@ -1,0 +1,20 @@
+<!--pages/kind/kind.wxml-->
+<view class='banner'>
+  <image mode='widthFix' src='{{url}}/images/banner/WechatIMG24.jpg' />
+</view>
+<view class='kind'>
+  <block wx:for="{{kind}}" wx:key="key">
+    <view class='kindItem' data-idx='{{item.id-1}}' bindtap='changeKind' style='border-left:{{selKind==item.id-1?"2px solid #f23030":"none"}};border-right:{{selKind == item.id-1?"none":"1px solid #EEE"}}'>
+      {{item.name}}
+    </view>
+  </block>
+  <view class='empty'>
+  </view>
+</view>
+<view class='childKind'>
+  <block wx:for="{{cildKind}}" wx:key="key">
+    <view class='cildKindItem' bindtap='toGoodsList' data-id='{{item.id}}'>
+      <image mode='widthFix' src='{{url}}{{item.icon}}' />
+    </view>
+  </block>
+</view>

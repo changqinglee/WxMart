@@ -1,0 +1,93 @@
+<!--index.wxml-->
+  <view class="banner">
+    <swiper class="bannerSwiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{banner}}" wx:key="key">
+        <swiper-item>
+          <image mode="widthFix" src="{{url}}{{item.url}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="nav">
+    <view class="nav_view" bindtap="toMine">
+      <image mode="widthFix" src="{{url}}/images/icon/person.png"/>
+      <text>会员中心</text>
+    </view>
+    <view class="nav_view" bindtap='toDingdan'>
+      <image mode="widthFix" src="{{url}}/images/icon/dingdan.png"/>
+      <text>我的订单</text>
+    </view>
+  </view>
+  <view class='menu'>
+    <view class='menu_view' data-kind='0' bindtap='toKindPage'>
+      <image mode='widthFix' src='{{url}}/images/images/weixiu.jpg' />
+    </view>
+    <view class='menu_view' data-kind='1' bindtap='toKindPage'>
+      <image mode='widthFix' src='{{url}}/images/images/wujin.jpg' />
+    </view>
+    <view class='menu_view' data-kind='2' bindtap='toKindPage'>
+      <image mode='widthFix' src='{{url}}/images/images/sheji.jpg' />
+    </view>
+    <view class='menu_view' data-kind='3' bindtap='toKindPage'>
+      <image mode='widthFix' src='{{url}}/images/images/baihuo.jpg' />
+    </view>
+  </view>
+  <view class='homeGoods'>
+    <view class='kindItem'>
+      <view class='kindTitle'>
+        <view class='titleText'>
+          便民维修
+        </view>
+        <view class='titleRight'></view>
+      </view>
+      <view class='goods'>
+        <block wx:for="{{wujin}}" wx:key="key">
+          <view class='goodsItem'>
+            <image data-id='{{item.id}}' bindtap='togoodsDet' mode='widthFix' src='{{url}}{{item.img}}' />
+            <text class='goodsTitle'>{{item.name}}</text>
+            <view class='price'>￥{{item.price}}
+            <image data-id='{{item.id}}' bindtap='joincarts' mode='widthFix' src='{{url}}/images/icon/gouwuche.png' />
+          </view>
+        </view>
+        </block>
+      </view>
+    </view>
+    <view class='kindItem'>
+      <view class='kindTitle'>
+        <view class='titleText'>
+          家用五金
+        </view>
+        <view class='titleRight'></view>
+      </view>
+      <view class='goods'>
+        <block wx:for="{{richang}}" wx:key="key">
+          <view class='goodsItem'>
+            <image data-id='{{item.id}}' bindtap='togoodsDet' mode='widthFix' src='{{url}}{{item.img}}' />
+            <text class='goodsTitle'>{{item.name}}</text>
+            <view class='price'>￥{{item.price}}
+            <image data-id='{{item.id}}' bindtap='joincarts' mode='widthFix' src='{{url}}/images/icon/gouwuche.png' />
+          </view>
+        </view>
+        </block>
+      </view>
+    </view>
+    <view class='kindItem'>
+      <view class='kindTitle'>
+        <view class='titleText'>
+          日用百货
+        </view>
+        <view class='titleRight'></view>
+      </view>
+      <view class='goods'>
+        <block wx:for="{{weixiu}}" wx:key="key">
+          <view class='goodsItem'>
+            <image data-id='{{item.id}}' bindtap='togoodsDet' mode='widthFix' src='{{url}}{{item.img}}' />
+            <text class='goodsTitle'>{{item.name}}</text>
+            <view class='price'>￥{{item.price}}
+            <image data-id='{{item.id}}' bindtap='joincarts' mode='widthFix' src='{{url}}/images/icon/gouwuche.png' />
+          </view>
+        </view>
+        </block>
+      </view>
+    </view>
+  </view>

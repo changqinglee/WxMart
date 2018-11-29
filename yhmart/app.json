@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/kind/kind",
+    "pages/cart/cart",
+    "pages/dingdan/dingdan",
+    "pages/goods/goods",
+    "pages/goodsDet/goodsDet",
+    "pages/xiadan/xiadan",
+    "pages/address/address",
+    "pages/mine/mine",
+    "pages/pinglun/pinglun"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "生活驿站",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#f23030",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/icon/home.png",
+        "selectedIconPath": "/icon/home_select.png"
+      },
+      {
+        "pagePath": "pages/kind/kind",
+        "text": "商品分类",
+        "iconPath": "/icon/fenlei.png",
+        "selectedIconPath": "/icon/fenlei_select.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/icon/gouwuche.png",
+        "selectedIconPath": "/icon/gouwuche_select.png"
+      },
+      {
+        "pagePath": "pages/dingdan/dingdan",
+        "text": "我的订单",
+        "iconPath": "/icon/dingdan.png",
+        "selectedIconPath": "/icon/dingdan_select.png"
+      }
+    ]
+  }
+}

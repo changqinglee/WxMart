@@ -1,0 +1,109 @@
+/* pages/cart/cart.wxss */
+image{
+    vertical-align: bottom;
+}
+.empty{
+    background: #EEE;
+    height: 30rpx;
+}
+.cartItem{
+    overflow: hidden;
+}
+.cartselect{
+    width: 10%;
+    float: left;
+}
+.cartImg{
+    width: 30%;
+    float: left;
+}
+.cartImg image{
+    width: 100%;
+}
+.cartInfo{
+    width: 60%;
+    float: left;
+}
+.cartPrice text{
+    display: block;
+}
+.cartInfo view{
+    width: 90%;
+    margin: 0 auto;
+}
+icon{
+    margin: 20rpx 0 0 20rpx;
+}
+.totalpriceview{
+    height: 100rpx;
+    line-height: 95rpx;
+    float: left;
+    width: 70%;
+    text-align: right;
+    background: #FFF;
+}
+.totalpricesub{
+    height: 100rpx;
+    line-height: 95rpx;
+    float: left;
+    width: 30%;
+    color: #fff;
+    background: #f50;
+    text-align: center;
+}
+.totalprice{
+    height: 80rpx;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.cartPage{
+    padding-bottom: 100rpx;
+}
+.totalpricenum{
+    color: #F50;
+    margin-right: 20%;
+    font-size: 60rpx;
+    font-weight: 300;
+}
+.totalprice{
+    border-top: 1px solid #e7e7e7;
+    overflow: hidden;
+}
+.cartInfo .cartTitle{
+    margin-top: 20rpx;
+}
+.oldprice{
+    text-decoration: line-through;
+    color: #999;
+    font-size: 30rpx;
+}
+.price{
+    color: #f23030;
+    font-size: 40rpx;
+}
+.cartInfo .cartPrice{
+    margin-top: 20rpx;
+    width: 40%;
+    float: left;
+}
+.cartInfo .changenum{
+    margin-top: 20rpx;
+    float: left;
+    width: 60%;
+    font-size: 40rpx;
+    text-align: right;
+}
+.changenum text{
+    border:1px solid #999;
+    display: inline-block;
+    padding: 0 10rpx;
+}
+.plus{
+    margin-right: 20rpx;
+}
+.delete{
+    width: 55%;
+    float: left;
+    text-align: right;
+}

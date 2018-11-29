@@ -1,0 +1,73 @@
+<!--pages/xiadan/xiadan.wxml-->
+<view wx:if="{{!hasAddress}}">
+  <view>
+    您还没有收货地址，点击添加
+  </view>
+  <button bindtap='toAddAddress'>添加收货地址</button>
+</view>
+<view class='address' wx:if="{{hasAddress}}">
+  <view class='addressIcon'>
+    <image wx:if="{{url}}" mode='widthFix' src='{{url}}/images/icon/address.png' />
+  </view>
+  <view class='addressInfo'>
+    <view class='person'>
+      <text>收货人：{{address.name}}</text><text class='addressTel'>{{address.tel}}</text>
+    </view>
+    <view class='addressDet'>
+      <text>收货地址：{{address.qu}}{{address.zhen?address.zhen:''}}{{address.detail}}</text>
+    </view>
+  </view>
+</view>
+<view class='empty'></view>
+<view class='goods'>
+  <block wx:for="{{goodsDet}}" wx:key="key">
+    <view class='ItemView'>
+    <view class='goodsItem'>
+    <view class='goodsimg'>
+      <image mode='widthFix' src='{{url}}{{item.img}}' />
+    </view>
+    <view class='goodsInfo'>
+      <view class='goodsName'>
+        <text>{{item.name}}</text>
+      </view>
+      <view class='goodsPrice'>
+        <text class='priceIcon'>￥</text><text class='priceNum'>{{item.price}}</text>
+      </view>
+      <view class='goodsNum'>
+        <text>X {{item.num?item.num:"1"}}</text>
+      </view>
+    </view>
+    </view>
+    <view class='changenum'>
+      <text>购买数量</text><view class='changebtn'><view class='jiannum' data-idx="{{index}}" bindtap='jiannum'>-</view><view class='num'>{{item.num?item.num:"1"}}</view><view class='plusnum' data-idx="{{index}}" bindtap='plusnum'>+</view></view>
+    </view>
+    <view class='smailtotal'>
+      <text>共{{item.num?item.num:"1"}}件，合计：</text><text class='smailtotalprice'>￥{{item.num?item.num*item.price:item.price}}</text>
+    </view>
+<view class='empty'></view>
+  </view>
+  </block>
+</view>
+<view wx:if="{{hasweixiu}}" class='miaoshu'>
+    <view class='trobleintro'>
+      <textarea fixed='{{tag}}' bindinput='textareaInput' placeholder='请简单描述您家遇到的问题' />
+    </view>
+    <view class='photoview'>
+      <block wx:for="{{photo}}" wx:key="key">
+        <view class='photo'>
+          <image src='{{item}}' />
+        </view>
+      </block>
+    </view>
+      <view class='addphoto' bindtap='addphoto'>
+        <image mode='widthFix' src="{{url}}/images/icon/addphoto.png" />
+      </view>
+  </view>
+  <view class='bottommenu'>
+    <view class='total'>
+      共{{totalnum}}件，总金额 <text class='totalpricr'>￥{{totalprice}}</text>
+    </view>
+    <view class='buy' bindtap='xiadan'>
+      提交订单
+    </view>
+  </view>

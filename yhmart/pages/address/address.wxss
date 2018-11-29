@@ -1,0 +1,22 @@
+/* pages/address/address.wxss */
+page{
+    background: #f5f5f5;
+}
+.addressForm view{
+    margin: 20rpx auto;
+    border-bottom: 1px solid #EEE;
+    width: 90%;
+}
+.addressForm .picker{
+    width: 100%;
+    text-align: left;
+}
+.addresstitle{
+    background: #FFF;
+    text-align: center;
+}
+.addressview{
+    background: #FFF;
+    margin-top: 30rpx;
+    padding-top: 20rpx;
+}

@@ -1,0 +1,43 @@
+<!--pages/goodsDet/goodsDet.wxml-->
+<view class='goodsImg'>
+  <image wx:if="{{goodsDet.img}}"  mode='widthFix' src='{{url}}{{goodsDet.img}}' />
+</view>
+<view class='goodsname'>
+  <view class='goodsTit'>
+    <text>
+      {{goodsDet.name}}
+    </text>
+  </view>
+</view>
+<view class='goodsprice'>
+  <text class='price'>￥ {{goodsDet.price}}</text>
+  <text class='oldprice'>市场价：￥ {{goodsDet.oldprice}}</text>
+</view>
+<view class='empty'>
+</view>
+<view class='canshu'>
+  产品详情
+</view>
+<view class='intro'>
+  <block wx:for="{{nature}}" wx:key="key">
+    <view class='natureView'>
+      {{item}}：{{goodsDet.nature[item]}}
+    </view>
+  </block>
+</view>
+<view class='detailimg'>
+  <block wx:for="{{detail}}" wx:key="key">
+    <image mode='widthFix' src='{{url}}{{item.img}}' />
+  </block>
+</view>
+<view class='bottommenu'>
+  <view class='bottomprice'>
+    ￥{{goodsDet.price}}
+  </view>
+  <view class='joincarts' data-id='{{goodsDet.id}}' bindtap='joincarts'>
+    加入购物车
+  </view>
+  <view class='buy' data-id='{{goodsDet.id}}' bindtap='toXiadain'>
+    立即购买
+  </view>
+</view>

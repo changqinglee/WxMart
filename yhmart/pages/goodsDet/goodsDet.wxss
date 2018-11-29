@@ -1,0 +1,89 @@
+/* pages/goodsDet/goodsDet.wxss */
+page{
+}
+image{
+    vertical-align: bottom;
+}
+.goodsImg{
+    width: 100%;
+}
+.goodsImg image{
+    width: 100%;
+}
+.goodsname{
+    width: 90%;
+    margin: 0 auto;
+}
+.goodsTit text{
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.goodsprice{
+    width: 90%;
+    margin: 30rpx auto;
+}
+.goodsprice text{
+    display: block;
+}
+.price{
+    color: #f23030;
+    font-weight: 600;
+    font-size: 60rpx;
+}
+.oldprice{
+    color: #888;
+    text-decoration: line-through;
+    font-size: 26rpx;
+}
+.empty{
+    background: #f7f7f7;
+    height: 30rpx;
+}
+.canshu{
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid #f23030;
+    font-size: 40rpx;
+    text-align: center;
+    color: #f23030;
+    padding: 30rpx;
+}
+.bottommenu{
+    text-align: center;
+    height: 100rpx;
+    line-height: 100rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+}
+.bottomprice{
+    width: 40%;
+    float: left;
+    background: #fff;
+    color: #F52;
+}
+.joincarts{
+    width: 30%;
+    float: left;
+    background: #FF9500;
+}
+.buy{
+    width: 30%;
+    float: left;
+    background: #FF0036;
+}
+.intro{
+    width: 70%;
+    margin: 0 auto;
+    color: #888;
+}
+.detailimg image{
+    vertical-align: bottom;
+    width: 100%;    
+}
+.detailimg{
+    padding-bottom: 100rpx;
+}

@@ -1,0 +1,27 @@
+<!--pages/address/address.wxml-->
+<view class='addresstitle'>
+  <text>我的地址</text>
+</view>
+<view class='addressview'>
+<form class='addressForm' bindsubmit='addressSubmit'>
+  <view class='nameview'>
+    <input placeholder='请输入您的姓名' name="name" value='{{address.name?address.name:""}}' />
+  </view>
+  <view class='telview'>
+    <input placeholder='请输入您的手机号码' name="tel"  value='{{address.tel?address.tel:""}}' />
+  </view>
+  <view class='quview'>
+    <picker name="qu" bindchange="bindPickerChange" value="{{qu[index]}}" range="{{qu}}">
+        <text class="picker">
+          当前选择：{{qu[index]}}
+        </text>
+      </picker>
+  </view>
+  <view class='detailview'>
+    <input name="detail" placeholder='请填写详细地址' value='{{address.detail?address.detail:""}}' />
+  </view>
+  <view class='formSub'>
+    <button form-type='submit'>提交</button>
+  </view>
+</form>
+</view>

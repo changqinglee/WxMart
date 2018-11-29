@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加银行信息</title>
+    <script src="../res/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<input type="text" name="code" id="code">
+<input type="text" name="name" id="name">
+<button id="bankSub" type="button">添加</button>
+</body>
+
+<script>
+        $("#bankSub").click(function () {
+            if ($("#code").val() == ''){
+                alert("填写银行代码");
+                $("#code").focus();
+                return false;
+            }
+            if ($("#name").val() == ''){
+                alert("填写银行名称");
+                $("#name").focus();
+                return false;
+            }
+            $.post(
+                "addbank.php",
+                {
+                    code:$("#code").val(),
+                    name:$("#name").val()
+                },
+                function (res) {
+                    console.log(res);
+                    if(res.code == 1){
+                        alert("Success!");
+                        $("#code").val("");
+                        $("#name").val("");
+                    }
+                },
+            "json"
+            )
+        })
+</script>
+</html>

@@ -1,0 +1,56 @@
+<!--pages/pinglun/pinglun.wxml-->
+<view class='orderview'>
+  <view class='orderimg'>
+    <image wx:if="{{order.detail[0].img}}" mode='widthFix' src='{{url}}{{order.detail[0].img}}' />
+  </view>
+  <view class='orderinfo'>
+    <view class='ordernum'>
+      订单号：{{order.out_trade_no}}
+    </view>
+    <view class='ordername'>
+      {{order.detail[0].name}}等{{goodsnum}}件商品
+    </view>
+    <view class='banktype'>
+      付款方式：{{order.bank}}
+    </view>
+    <view class='time_end'>
+      <text>交易完成时间：\n{{order.time_end}}</text>
+    </view>
+
+  </view>
+</view>
+<view class='discuss'>
+  <view class='discusstextarea'>
+    <textarea class='textarea' bindinput='textareaInput' placeholder-style='color:#999' placeholder='我们的服务您是否还满意，请说说您的体验吧' />
+  </view>
+  <view class='discussimg'>
+    <block wx:for="{{photo}}" wx:key="key">
+    <view class='discussimage'>
+      <image src='{{item}}' />
+    </view>
+    </block>
+    <view class='discussimage addimage' bindtap='addphoto'>
+      <image mode='widthFix' src='{{url}}/images/icon/addphoto.png' />
+      <view>
+      点击添加照片
+      </view>
+    </view>
+    
+  </view>
+  <view class='empty'>
+  </view>
+  <view class='discussnum'>
+      <text>请对我们的服务做出整体评分\n</text>
+      <text class='tip'>10分代表非常满意</text>
+      <view class="section">
+  <picker bindchange="bindPickerChange" value="{{array[index]}}" range="{{array}}">
+    <view class="picker">
+      点击评分：当前评分{{array[index]}}
+    </view>
+  </picker>
+</view>
+    </view>
+  <view class='submit' bindtap='discussSub'>
+    <button type='primary' class=''>发表评论</button>
+  </view>
+</view>

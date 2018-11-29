@@ -1,0 +1,45 @@
+<!--pages/cart/cart.wxml-->
+<view class='getuserinfo' wx:if="{{!hasUserInfo}}">
+  <button open-type='getUserInfo' bindtap='getUserInfo'>
+    点击微信登录
+  </button>
+</view>
+<view class='cartPage' wx:if="{{hasUserInfo}}">
+  <block wx:for="{{carts}}" wx:key="key">
+    <view class='empty'>
+    </view>
+    <view class='cartItem'>
+      <view class='cartselect'>
+        <icon wx:if="{{item.selected}}" data-id='{{index}}' bindtap='changeselected' type='success' size='25' color='red' />
+        <icon wx:if="{{!item.selected}}" data-id='{{index}}' bindtap='changeselected' type='circle' size='25' color='#999' />
+      </view> 
+      <view class='cartImg'>
+        <image mode='widthFix' src='{{url}}{{item.img}}' />
+      </view>
+      <view class='cartInfo'>
+        <view class='cartTitle'>
+          {{item.name}}
+        </view>
+        <view class='cartPrice'>
+          <text class='price'>￥{{item.price}}</text>
+          <text class='oldprice'>￥{{item.oldprice}}</text>
+        </view>
+        <view class='changenum'>
+          <text class='jian' data-id='{{item.id}}' data-type='jian' data-num='{{item.num}}' bindtap='changecartnum'>-</text><text>{{item.num}}</text><text class='plus' data-id='{{item.id}}' data-type='plus' bindtap='changecartnum'>+</text>
+        </view>
+      </view>
+      <view class='delete' bindtap='deletecarts' data-id='{{item.id}}'>
+        删除
+      </view>
+    </view>
+  </block><view class='empty'>
+    </view>
+</view>
+<view class='totalprice' wx:if="{{hasUserInfo}}">
+  <view class='totalpriceview'>
+    <text>总价：￥</text><text class='totalpricenum'>{{totalprice}}</text>
+  </view>
+  <view class='totalpricesub' bindtap='toXiadan'>
+    结算
+  </view>
+</view>

@@ -1,0 +1,130 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.banner{
+  width: 100%;
+}
+
+.banner image{
+  width: 100%;
+}
+
+.bannerSwiper{
+  height: 360rpx;
+}
+
+.nav{
+  overflow: hidden;
+}
+
+.nav_view{
+  text-align: center;
+  width: 50%;
+  float: left;
+  padding: 10px 0;
+  border-bottom: 1rpx solid #ebebeb;
+}
+
+.nav_view image{
+  width: 60rpx;
+  vertical-align: bottom;
+}
+
+.nav_view text{
+  display: block;
+  font-size: 32rpx;
+  color: #999;
+}
+
+.menu_view{
+  width: 45%;
+  margin: 0 2.5%;
+  margin-top: 20rpx;
+  float: left;
+}
+
+.menu_view image{
+  width: 100%;
+}
+
+.menu{
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+.kindItem{
+  margin-top: 30rpx;
+}
+.kindTitle{
+  overflow: hidden;
+}
+
+.kindTitle view{
+  float: left;
+}
+
+.titleText{
+  width: 25%;
+  text-align: center;
+  color: #f23030;
+  border-bottom: 1px solid #f23030;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.titleRight{
+  width: 75%;
+  border-bottom: 1px solid #eee;
+  height: 90rpx;
+}
+.goods{
+  overflow: hidden;
+}
+.goodsItem image{
+  width: 100%;
+}
+.goodsItem{
+  width: 45%;
+  margin: 10px 2.5%;
+  float: left;
+  border: 1px solid #DDD;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.price{
+  width: 90%;
+  margin: 0 auto;
+  color: #f23030;
+  padding: 5rpx 0;
+  padding: 10rpx 0;
+  font-size: 44rpx;
+}
+.price image{
+  width: 60rpx;
+  float: right;
+}
+.goodsTitle{
+  display: block;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px dashed #eee;
+}

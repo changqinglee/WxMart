@@ -1,0 +1,42 @@
+/* pages/mine/mine.wxss */
+page{
+    background: #EEE;
+}
+.banner{
+    height: 360rpx;
+    overflow: hidden;
+    position: relative;
+}
+.banner image{
+    width: 100%;
+}
+.userIcon{
+    position: absolute;
+    width: 20%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 70rpx;
+}
+.userIcon image{
+    width: 100%;
+    border-radius: 50%;
+}
+.nickName{
+    position: absolute;
+    bottom: 20rpx;
+    text-align: center;
+    width: 100%;
+    color: #FF0036;
+}
+.menuItem{
+    box-sizing: border-box;
+    padding: 20rpx 30rpx;
+    background: #FFF;
+    margin-top: 30rpx;
+
+}
+.menuItem text{
+    text-align: right;
+    float: right;
+}

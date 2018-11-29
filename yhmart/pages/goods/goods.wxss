@@ -1,0 +1,73 @@
+/* pages/goods/goods.wxss */
+.headAd image{
+    width: 100%;
+}
+.headAd swiper{
+    height: 130rpx;
+}
+.titleLeft{
+    width:30%;
+text-align:center;
+color:#f23030;
+border-bottom:1px solid #f23030;
+height:90rpx;
+line-height:90rpx;
+box-sizing: border-box;
+float: left;
+}
+.goodsListTitle{
+    overflow: hidden;
+}
+.titleRight{
+    width:70%;
+border-bottom:1px solid #eee;
+height:90rpx;
+box-sizing: border-box;
+float: left;
+}
+.goodsList{
+    width: 90%;
+    margin: 30rpx auto;
+}
+.goodsItem{
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    padding: 50rpx 0;
+    position: relative;
+}
+.goodsImg{
+    width: 30%;
+    float: left;
+}
+.goodsImg image{
+    width: 100%;
+}
+.goodsInfo{
+    width: 70%;
+    float: left;
+}
+.goodsInfo text{
+  overflow: hidden;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.oldprice{
+    text-decoration: line-through;
+    color: #888;
+    font-size: 32rpx;
+}
+.price{
+    color: #f23030;
+}
+.cartIcon{
+    width: 64rpx;
+    right: 10rpx;
+    position: absolute;
+}
+.cartIcon image{
+    width: 100%;
+}
